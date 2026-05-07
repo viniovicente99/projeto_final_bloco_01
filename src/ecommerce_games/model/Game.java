@@ -19,6 +19,7 @@ public class Game extends Product {
 	}
 
 	public void viewProduct() {
+
 		super.viewProduct();
 		System.out.println("Plataforma do Jogo: " + this.platform);
 	}

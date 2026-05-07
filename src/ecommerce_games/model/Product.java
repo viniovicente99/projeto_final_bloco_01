@@ -57,13 +57,24 @@ public abstract class Product {
 	}
 
 	public void viewProduct() {
+		
+		String type = "";
+
+		switch (this.type) {
+		case 1:
+			type = "Hardware";
+			break;
+		case 2:
+			type = "Jogo";
+			break;
+		}
 
 		System.out.println("\n\n***********************************************************");
 		System.out.println("Dados do Produto:");
 		System.out.println("***********************************************************");
 		System.out.println("ID do Produto: " + this.id);
 		System.out.println("Nome do Produto: " + this.name);
-		System.out.println("Tipo do Produto: " + this.type);
+		System.out.println("Tipo do Produto: " + type);
 		System.out.printf("Preço do Produto: R$ %.2f%n", this.price);
 		System.out.println("Quantidade em Estoque: " + this.stock);
 
