@@ -1,6 +1,6 @@
 package ecommerce_games.model;
 
-public class Product {
+public abstract class Product {
 
 	private int id;
 	private String name;
